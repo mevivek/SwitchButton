@@ -18,19 +18,13 @@ Latested Change Log: (**2.0.0**)
 
 **Some attributes are changed and you need to update them to the new ones, since the measurement logic has been totally changed. (Default behavior and style does not change.)**
 
-**因为测量逻辑的改变，部分属性已经做了修改，请更新到新的属性。（默认行为和样式并没有变化）**
 
 > 1.  Re-clarify the meaning of some params.
 > 2.  Update the measurement of SwitchButton and the logic becomes more clear, especially the text part.
 > 3.  Support config SwitchButton's size by setting a exact width and height. There are now TWO mainly method to control it's size.
-> 4.  When use SwitchButon in a scrollable view, SwitchButton consume scroll gestures only horizontal. This means the when you want to scroll the scrollable view vertically and start your touch on a SwitchButton, it will not stop you now.
+> 4.  When use SwitchButton in a scrollable view, SwitchButton consume scroll gestures only horizontal. This means the when you want to scroll the scrollable view vertically and start your touch on a SwitchButton, it will not stop you now.
 > 5.  Bug fix.
 
->1.  重新明确了参数的含义。
->2.  更新了SwitchButton的测量机制，逻辑更加清晰；尤其是文字部分。
->3.  支持设置确定的宽高，来确定SwitchButton的View大小。现在有两种方式可以控制SwitchButton的大小了。
->4.  可滚动的View中的SwitchButton只会消费横向滚动事件。这意味着你可以从SwitchButton开始按下并纵向滚动可滚动View，SwitchButton现在不会阻止你滚动了。
->5.  Bug 修复。
 
 [All Change Log](./CHANGELOG.md)
 
@@ -54,14 +48,6 @@ Add dependencies in build.gradle of your module
 1.  **kswBackMeasureRatio** has been removed from SwitchButton attributes since it has an ambiguous meaning. I've add the new **kswThumbRangeRatio** attribute to represent how much multiple the scroll range of thumb than the width of thumb.
 2.  **kswTextMarginH** and **kswAutoAdjustTextPosition** have been removed from SwitchButton attributes since I updated the measurement logic of text part. And these two attributes do not represent the back meaning well. **kswTextThumbInset**, **kswTextExtra** and **kswTextAdjust** was introduced to represent "how much the text go under thumb", "how much extra space do you want around the text" and "how much to move the text from the center of text area to adjust the text's position". There are all shown on the diagram.
 3.  Setters and getters are also changed due to the change of attributes.
-
-**CHN**
-
-下面有一张图表来解释SwitchButton在2.0.0版本中是如何进行测量的，非常建议你看一看。
-
-1.  **kswBackMeasureRatio** 属性被移除了，因为名称有歧义。新增加的 **kswThumbRangeRatio** 属性表示thumb移动区域和thumb宽度的比值。
-2.  **kswTextMarginH** 和 **kswAutoAdjustTextPosition** 属性被移除了，因为我更新了对文字的测量逻辑，而且这两个属性名称表意不明确。我增加了**kswTextThumbInset**, **kswTextExtra** 和 **kswTextAdjust** 这三个新属性来分别表示“文字在thumb下面的距离”，“额外文字空间”和”文字调节距离“。这些都在图表中有所体现。
-3.  setter和getter都跟随属性名称的改变而进行了改变。
 
 ### Diagram: How SwitchButton Measure
 
