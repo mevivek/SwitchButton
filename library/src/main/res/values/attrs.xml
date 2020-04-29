@@ -2,28 +2,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <declare-styleable name="SwitchButton" tools:ignore="ResourceName">
-        <attr name="kswThumbDrawable" format="reference"/>
-        <attr name="kswThumbColor" format="color|reference"/>
-        <attr name="kswThumbMargin" format="dimension|reference"/>
-        <attr name="kswThumbMarginTop" format="dimension|reference"/>
-        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
-        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
-        <attr name="kswThumbMarginRight" format="dimension|reference"/>
-        <attr name="kswThumbWidth" format="dimension|reference"/>
-        <attr name="kswThumbHeight" format="dimension|reference"/>
-        <attr name="kswThumbRadius" format="dimension|reference"/>
-        <attr name="kswBackRadius" format="dimension|reference"/>
-        <attr name="kswBackDrawable" format="reference"/>
-        <attr name="kswBackColor" format="color|reference"/>
-        <attr name="kswFadeBack" format="boolean"/>
-        <attr name="kswThumbRangeRatio" format="float"/>
-        <attr name="kswAnimationDuration" format="integer"/>
-        <attr name="kswTintColor" format="color|reference"/>
-        <attr name="kswTextOn" format="string"/>
-        <attr name="kswTextOff" format="string"/>
-        <attr name="kswTextThumbInset" format="dimension"/>
-        <attr name="kswTextExtra" format="dimension"/>
-        <attr name="kswTextAdjust" format="dimension"/>
+        <attr name="sbThumbDrawable" format="reference"/>
+        <attr name="sbThumbColor" format="color|reference"/>
+        <attr name="sbThumbMargin" format="dimension|reference"/>
+        <attr name="sbThumbMarginTop" format="dimension|reference"/>
+        <attr name="sbThumbMarginBottom" format="dimension|reference"/>
+        <attr name="sbThumbMarginLeft" format="dimension|reference"/>
+        <attr name="sbThumbMarginRight" format="dimension|reference"/>
+        <attr name="sbThumbWidth" format="dimension|reference"/>
+        <attr name="sbThumbHeight" format="dimension|reference"/>
+        <attr name="sbThumbRadius" format="dimension|reference"/>
+        <attr name="sbBackRadius" format="dimension|reference"/>
+        <attr name="sbBackDrawable" format="reference"/>
+        <attr name="sbBackColor" format="color|reference"/>
+        <attr name="sbFadeBack" format="boolean"/>
+        <attr name="sbThumbRangeRatio" format="float"/>
+        <attr name="sbAnimationDuration" format="integer"/>
+        <attr name="sbTintColor" format="color|reference"/>
+        <attr name="sbTextOn" format="string"/>
+        <attr name="sbTextOff" format="string"/>
+        <attr name="sbTextThumbInset" format="dimension"/>
+        <attr name="sbTextExtra" format="dimension"/>
+        <attr name="sbTextAdjust" format="dimension"/>
     </declare-styleable>
 
 </resources>

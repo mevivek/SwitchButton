@@ -1,44 +1,41 @@
 package com.android.switchbutton.demo;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.switchbutton.SwitchButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by kyle on 16/1/8.
- */
 public class RecyclerActivity extends AppCompatActivity {
-
-	private RecyclerView mRecyclerView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_recycler);
 
-		mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+		RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 		SwitchRecyclerAdapter adapter = new SwitchRecyclerAdapter();
 		mRecyclerView.setAdapter(adapter);
 		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 	}
 
-	private class SwitchViewHolder extends RecyclerView.ViewHolder {
+	private static class SwitchViewHolder extends RecyclerView.ViewHolder {
 
 		TextView tv;
 		SwitchButton sb;
 
-		public SwitchViewHolder(View itemView) {
+		SwitchViewHolder(View itemView) {
 			super(itemView);
 			tv = (TextView) itemView.findViewById(R.id.recycler_item_tv);
 			sb = (SwitchButton) itemView.findViewById(R.id.recycler_item_sb);
@@ -56,6 +53,7 @@ public class RecyclerActivity extends AppCompatActivity {
 			}
 		}
 
+		@NonNull
 		@Override
 		public SwitchViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 			View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_recycler_item, parent, false);

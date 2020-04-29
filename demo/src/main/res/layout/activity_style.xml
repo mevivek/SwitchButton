@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:background="#E0E0E0"
-                app:kswThumbWidth="20dp"
+                app:sbThumbWidth="20dp"
                 />
 
             <com.android.switchbutton.SwitchButton
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:background="#E0E0E0"
-                app:kswThumbWidth="20dp"
+                app:sbThumbWidth="20dp"
                 />
         </LinearLayout>
 
@@ -76,7 +76,7 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:background="#E0E0E0"
-                app:kswThumbMargin="-5dp"
+                app:sbThumbMargin="-5dp"
                 />
 
             <com.android.switchbutton.SwitchButton
@@ -86,8 +86,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:background="#E0E0E0"
-                app:kswThumbMargin="-5dp"
-                app:kswThumbWidth="20dp"
+                app:sbThumbMargin="-5dp"
+                app:sbThumbWidth="20dp"
                 />
 
             <com.android.switchbutton.SwitchButton
@@ -97,8 +97,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="16dp"
                 android:background="#E0E0E0"
-                app:kswThumbMargin="-5dp"
-                app:kswThumbWidth="20dp"
+                app:sbThumbMargin="-5dp"
+                app:sbThumbWidth="20dp"
                 />
         </LinearLayout>
 
@@ -113,10 +113,10 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:background="#E0E0E0"
-                app:kswTextExtra="10dp"
-                app:kswTextOff="OFF"
-                app:kswTextOn="ON"
-                app:kswThumbMargin="-5dp"
+                app:sbTextExtra="10dp"
+                app:sbTextOff="OFF"
+                app:sbTextOn="ON"
+                app:sbThumbMargin="-5dp"
                 />
 
             <com.android.switchbutton.SwitchButton
@@ -126,11 +126,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:background="#E0E0E0"
-                app:kswTextExtra="10dp"
-                app:kswTextOff="OFF"
-                app:kswTextOn="ON"
-                app:kswThumbMargin="-5dp"
-                app:kswThumbWidth="20dp"
+                app:sbTextExtra="10dp"
+                app:sbTextOff="OFF"
+                app:sbTextOn="ON"
+                app:sbThumbMargin="-5dp"
+                app:sbThumbWidth="20dp"
                 />
 
             <com.android.switchbutton.SwitchButton
@@ -140,11 +140,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:background="#E0E0E0"
-                app:kswTextExtra="10dp"
-                app:kswTextOff="OFF"
-                app:kswTextOn="ON"
-                app:kswThumbMargin="-5dp"
-                app:kswThumbWidth="20dp"
+                app:sbTextExtra="10dp"
+                app:sbTextOff="OFF"
+                app:sbTextOn="ON"
+                app:sbThumbMargin="-5dp"
+                app:sbThumbWidth="20dp"
                 />
         </LinearLayout>
 
@@ -166,10 +166,10 @@
                 android:layout_height="wrap_content"
                 android:textColor="#FFFFFF"
                 android:textSize="16dp"
-                app:kswTextAdjust="-2dp"
-                app:kswTextExtra="8dp"
-                app:kswTextOff="Off"
-                app:kswTextOn="On"
+                app:sbTextAdjust="-2dp"
+                app:sbTextExtra="8dp"
+                app:sbTextOff="Off"
+                app:sbTextOn="On"
                 />
 
             <com.android.switchbutton.SwitchButton
@@ -179,10 +179,10 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/custom_text_state_color"
                 android:textSize="16dp"
-                app:kswTextAdjust="-2dp"
-                app:kswTextExtra="8dp"
-                app:kswTextOff="Off"
-                app:kswTextOn="On"
+                app:sbTextAdjust="-2dp"
+                app:sbTextExtra="8dp"
+                app:sbTextOff="Off"
+                app:sbTextOn="On"
                 />
 
 
@@ -199,7 +199,7 @@
             style="@style/SwitchButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:kswFadeBack="false"/>
+            app:sbFadeBack="false"/>
 
         <TableLayout
             android:layout_width="match_parent"
@@ -237,10 +237,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:kswBackRadius="2dp"
-                    app:kswThumbRadius="2dp"
-                    app:kswThumbRangeRatio="2.2"
-                    app:kswTintColor="#49416E"
+                    app:sbBackRadius="2dp"
+                    app:sbThumbRadius="2dp"
+                    app:sbThumbRangeRatio="2.2"
+                    app:sbTintColor="#49416E"
                     />
 
                 <com.android.switchbutton.SwitchButton
@@ -249,11 +249,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:kswBackDrawable="@drawable/flyme_back_drawable"
-                    app:kswThumbDrawable="@drawable/flyme_thumb_drawable"
-                    app:kswThumbHeight="16dp"
-                    app:kswThumbRangeRatio="2.2"
-                    app:kswThumbWidth="16dp"
+                    app:sbBackDrawable="@drawable/flyme_back_drawable"
+                    app:sbThumbDrawable="@drawable/flyme_thumb_drawable"
+                    app:sbThumbHeight="16dp"
+                    app:sbThumbRangeRatio="2.2"
+                    app:sbThumbWidth="16dp"
                     />
 
                 <com.android.switchbutton.SwitchButton
@@ -262,11 +262,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:kswBackDrawable="@drawable/miui_back_drawable"
-                    app:kswThumbDrawable="@drawable/miui_thumb_drawable"
-                    app:kswThumbHeight="18dp"
-                    app:kswThumbRangeRatio="2"
-                    app:kswThumbWidth="18dp"
+                    app:sbBackDrawable="@drawable/miui_back_drawable"
+                    app:sbThumbDrawable="@drawable/miui_thumb_drawable"
+                    app:sbThumbHeight="18dp"
+                    app:sbThumbRangeRatio="2"
+                    app:sbThumbWidth="18dp"
                     />
             </TableRow>
 
@@ -290,7 +290,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                app:kswTintColor="#B13254"/>
+                app:sbTintColor="#B13254"/>
 
             <com.android.switchbutton.SwitchButton
                 android:id="@+id/sb_tint_color_1"
@@ -298,7 +298,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                app:kswTintColor="#FF5449"/>
+                app:sbTintColor="#FF5449"/>
 
             <com.android.switchbutton.SwitchButton
                 android:id="@+id/sb_tint_color_2"
@@ -306,7 +306,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                app:kswTintColor="#0E5AA4"/>
+                app:sbTintColor="#0E5AA4"/>
         </LinearLayout>
 
         <TextView
@@ -332,14 +332,14 @@
                 style="@style/SwitchButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:kswAnimationDuration="300"
-                app:kswBackDrawable="@drawable/ios_back_drawable"
-                app:kswThumbDrawable="@drawable/ios_thumb_selector"
-                app:kswThumbMarginBottom="-8dp"
-                app:kswThumbMarginLeft="-5dp"
-                app:kswThumbMarginRight="-5dp"
-                app:kswThumbMarginTop="-2.5dp"
-                app:kswThumbRangeRatio="1.4"/>
+                app:sbAnimationDuration="300"
+                app:sbBackDrawable="@drawable/ios_back_drawable"
+                app:sbThumbDrawable="@drawable/ios_thumb_selector"
+                app:sbThumbMarginBottom="-8dp"
+                app:sbThumbMarginLeft="-5dp"
+                app:sbThumbMarginRight="-5dp"
+                app:sbThumbMarginTop="-2.5dp"
+                app:sbThumbRangeRatio="1.4"/>
         </LinearLayout>
 
         <TextView

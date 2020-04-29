@@ -3,13 +3,12 @@ package com.android.switchbutton.demo;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -17,10 +16,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		ListView listView = (ListView) findViewById(R.id.list);
+		ListView listView = findViewById(R.id.list);
 		listView.setOnItemClickListener(this);
 	}
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -102,5 +100,4 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				break;
 		}
 	}
-
 }

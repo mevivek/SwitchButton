@@ -30,8 +30,6 @@ import android.widget.CompoundButton;
 
 import androidx.core.content.ContextCompat;
 
-import com.android.switchbutton.R;
-
 public class SwitchButton extends CompoundButton {
     public static final float DEFAULT_THUMB_RANGE_RATIO = 1.8f;
     public static final int DEFAULT_THUMB_SIZE_DP = 20;
@@ -156,28 +154,28 @@ public class SwitchButton extends CompoundButton {
 
         TypedArray ta = attrs == null ? null : getContext().obtainStyledAttributes(attrs, R.styleable.SwitchButton);
         if (ta != null) {
-            thumbDrawable = ta.getDrawable(R.styleable.SwitchButton_kswThumbDrawable);
-            thumbColor = ta.getColorStateList(R.styleable.SwitchButton_kswThumbColor);
-            margin = ta.getDimension(R.styleable.SwitchButton_kswThumbMargin, margin);
-            marginLeft = ta.getDimension(R.styleable.SwitchButton_kswThumbMarginLeft, margin);
-            marginRight = ta.getDimension(R.styleable.SwitchButton_kswThumbMarginRight, margin);
-            marginTop = ta.getDimension(R.styleable.SwitchButton_kswThumbMarginTop, margin);
-            marginBottom = ta.getDimension(R.styleable.SwitchButton_kswThumbMarginBottom, margin);
-            thumbWidth = ta.getDimension(R.styleable.SwitchButton_kswThumbWidth, thumbWidth);
-            thumbHeight = ta.getDimension(R.styleable.SwitchButton_kswThumbHeight, thumbHeight);
-            thumbRadius = ta.getDimension(R.styleable.SwitchButton_kswThumbRadius, thumbRadius);
-            backRadius = ta.getDimension(R.styleable.SwitchButton_kswBackRadius, backRadius);
-            backDrawable = ta.getDrawable(R.styleable.SwitchButton_kswBackDrawable);
-            backColor = ta.getColorStateList(R.styleable.SwitchButton_kswBackColor);
-            thumbRangeRatio = ta.getFloat(R.styleable.SwitchButton_kswThumbRangeRatio, thumbRangeRatio);
-            animationDuration = ta.getInteger(R.styleable.SwitchButton_kswAnimationDuration, animationDuration);
-            fadeBack = ta.getBoolean(R.styleable.SwitchButton_kswFadeBack, true);
-            tintColor = ta.getColor(R.styleable.SwitchButton_kswTintColor, tintColor);
-            textOn = ta.getString(R.styleable.SwitchButton_kswTextOn);
-            textOff = ta.getString(R.styleable.SwitchButton_kswTextOff);
-            textThumbInset = ta.getDimensionPixelSize(R.styleable.SwitchButton_kswTextThumbInset, 0);
-            textExtra = ta.getDimensionPixelSize(R.styleable.SwitchButton_kswTextExtra, 0);
-            textAdjust = ta.getDimensionPixelSize(R.styleable.SwitchButton_kswTextAdjust, 0);
+            thumbDrawable = ta.getDrawable(R.styleable.SwitchButton_sbThumbDrawable);
+            thumbColor = ta.getColorStateList(R.styleable.SwitchButton_sbThumbColor);
+            margin = ta.getDimension(R.styleable.SwitchButton_sbThumbMargin, margin);
+            marginLeft = ta.getDimension(R.styleable.SwitchButton_sbThumbMarginLeft, margin);
+            marginRight = ta.getDimension(R.styleable.SwitchButton_sbThumbMarginRight, margin);
+            marginTop = ta.getDimension(R.styleable.SwitchButton_sbThumbMarginTop, margin);
+            marginBottom = ta.getDimension(R.styleable.SwitchButton_sbThumbMarginBottom, margin);
+            thumbWidth = ta.getDimension(R.styleable.SwitchButton_sbThumbWidth, thumbWidth);
+            thumbHeight = ta.getDimension(R.styleable.SwitchButton_sbThumbHeight, thumbHeight);
+            thumbRadius = ta.getDimension(R.styleable.SwitchButton_sbThumbRadius, thumbRadius);
+            backRadius = ta.getDimension(R.styleable.SwitchButton_sbBackRadius, backRadius);
+            backDrawable = ta.getDrawable(R.styleable.SwitchButton_sbBackDrawable);
+            backColor = ta.getColorStateList(R.styleable.SwitchButton_sbBackColor);
+            thumbRangeRatio = ta.getFloat(R.styleable.SwitchButton_sbThumbRangeRatio, thumbRangeRatio);
+            animationDuration = ta.getInteger(R.styleable.SwitchButton_sbAnimationDuration, animationDuration);
+            fadeBack = ta.getBoolean(R.styleable.SwitchButton_sbFadeBack, true);
+            tintColor = ta.getColor(R.styleable.SwitchButton_sbTintColor, tintColor);
+            textOn = ta.getString(R.styleable.SwitchButton_sbTextOn);
+            textOff = ta.getString(R.styleable.SwitchButton_sbTextOff);
+            textThumbInset = ta.getDimensionPixelSize(R.styleable.SwitchButton_sbTextThumbInset, 0);
+            textExtra = ta.getDimensionPixelSize(R.styleable.SwitchButton_sbTextExtra, 0);
+            textAdjust = ta.getDimensionPixelSize(R.styleable.SwitchButton_sbTextAdjust, 0);
             ta.recycle();
         }
 
@@ -293,7 +291,7 @@ public class SwitchButton extends CompoundButton {
 
     /**
      * SwitchButton use this formula to determine the final size of thumb, background and itself.
-     *
+     * <p>
      * textWidth = max(onWidth, offWidth)
      * thumbRange = thumbWidth * rangeRatio
      * textExtraSpace = textWidth + textExtra - (moveRange - thumbWidth + max(thumbMargin.left, thumbMargin.right) + textThumbInset)

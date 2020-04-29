@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.android.switchbutton.demo"
+4    android:versionCode="1"
+5    android:versionName="0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:6:2-57:16
+12        android:allowBackup="false"
+12-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:7:3-30
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\meviv\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:8:3-37
+16        android:label="@string/app_name"
+16-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:9:3-35
+17        android:testOnly="true"
+18        android:theme="@style/AppTheme" >
+18-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:10:3-34
+19        <activity
+19-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:11:3-19:14
+20            android:name="com.android.switchbutton.demo.MainActivity"
+20-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:12:4-32
+21            android:label="@string/app_name" >
+21-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:13:4-36
+22            <intent-filter>
+22-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:14:4-18:20
+23                <action android:name="android.intent.action.MAIN" />
+23-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:15:5-56
+23-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:15:13-54
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:17:5-64
+25-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:17:15-62
+26            </intent-filter>
+27        </activity>
+28        <activity
+28-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:20:3-28:14
+29            android:name="com.android.switchbutton.demo.StyleActivity"
+29-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:21:4-33
+30            android:label="@string/title_activity_style"
+30-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:22:4-48
+31            android:parentActivityName="com.android.switchbutton.demo.MainActivity" >
+31-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:23:4-46
+32            <meta-data
+32-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:24:4-27:7
+33                android:name="android.support.PARENT_ACTIVITY"
+33-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:25:5-51
+34                android:value=".MainActivity" />
+34-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:26:5-34
+35        </activity>
+36        <activity
+36-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:29:3-37:14
+37            android:name="com.android.switchbutton.demo.UseActivity"
+37-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:30:4-31
+38            android:label="@string/title_activity_use"
+38-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:31:4-46
+39            android:parentActivityName="com.android.switchbutton.demo.MainActivity" >
+39-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:32:4-46
+40            <meta-data
+40-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:24:4-27:7
+41                android:name="android.support.PARENT_ACTIVITY"
+41-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:25:5-51
+42                android:value=".MainActivity" />
+42-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:26:5-34
+43        </activity>
+44        <activity
+44-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:38:3-46:14
+45            android:name="com.android.switchbutton.demo.StyleInCodeActivity"
+45-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:39:4-39
+46            android:label="@string/title_activity_style_in_code"
+46-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:40:4-56
+47            android:parentActivityName="com.android.switchbutton.demo.MainActivity" >
+47-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:41:4-46
+48            <meta-data
+48-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:24:4-27:7
+49                android:name="android.support.PARENT_ACTIVITY"
+49-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:25:5-51
+50                android:value=".MainActivity" />
+50-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:26:5-34
+51        </activity>
+52        <activity
+52-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:47:3-55:14
+53            android:name="com.android.switchbutton.demo.RecyclerActivity"
+53-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:48:4-36
+54            android:label="@string/title_activity_recycler_view"
+54-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:49:4-56
+55            android:parentActivityName="com.android.switchbutton.demo.MainActivity" >
+55-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:50:4-46
+56            <meta-data
+56-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:24:4-27:7
+57                android:name="android.support.PARENT_ACTIVITY"
+57-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:25:5-51
+58                android:value=".MainActivity" />
+58-->D:\AndroidStudioProjects\SwitchButton\demo\src\main\AndroidManifest.xml:26:5-34
+59        </activity>
+60    </application>
+61
+62</manifest>
