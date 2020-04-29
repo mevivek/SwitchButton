@@ -7,6 +7,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+library/build
+demo/build
+
 # Package Files #
 *.war
 *.ear
